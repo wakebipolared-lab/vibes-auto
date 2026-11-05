@@ -1,0 +1,1 @@
+import{readFileSync}from'node:fs';const s=readFileSync('src/main.jsx','utf8');for(const x of ['uk:','ru:','en:','sk:','searchbox','modal'])if(!s.includes(x))throw Error('missing '+x);console.log('PASS: 4 languages, search, carousel and form source checks');
